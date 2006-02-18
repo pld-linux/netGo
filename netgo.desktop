@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=netGo
+Comment=changing network-settings
+Comment[pl]=zmiana ustawień sieciowych
+Icon=netgo.png
+Exec=netgo
+Terminal=false
+Type=Application
+Categories=Qt;KDE;Network;
+Encoding=UTF-8
+# vi: encoding=utf-8
