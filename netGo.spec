@@ -11,6 +11,7 @@ Source1:	%{name}.desktop
 URL:		http://netgo.hjolug.org
 BuildRequires:	kdebase-devel
 BuildRequires:	qt-devel >= 3.2
+BuildRequires:	sed >= 4.0
 Requires:	net-tools
 Requires:	wireless-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -35,6 +36,9 @@ u¿ytkownicy mog± prze³±czaæ siê miêdzy nimi pojedynczym klikniêciem.
 %prep
 %setup -q
 
+rm -f netgo-bin
+sed -i -e 's,/usr/share/netgo/netgo-bin,%{_libdir}/netgo/netgo-bin,' netgo
+
 %build
 export QTDIR=%{_prefix}
 %configure
@@ -43,10 +47,10 @@ export QTDIR=%{_prefix}
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/%{name},%{_desktopdir},%{_iconsdir}/hicolor/32x32/apps}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/%{name},%{_desktopdir},%{_iconsdir}/hicolor/32x32/apps}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install icons/satelite_32x32.png $RPM_BUILD_ROOT%{_iconsdir}/hicolor/32x32/apps/%{name}.png
-install netgo-bin $RPM_BUILD_ROOT%{_datadir}/%{name}
+install netgo-bin $RPM_BUILD_ROOT%{_libdir}/%{name}
 install netgo $RPM_BUILD_ROOT%{_bindir}
 
 %clean
@@ -54,8 +58,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README TODO COPYING CHANGELOG
+%doc CHANGELOG README TODO
 %attr (755,root,root) %{_bindir}/*
-%attr (755,root,root) %{_datadir}/%{name}
+%attr (755,root,root) %{_libdir}/%{name}
 %{_iconsdir}/hicolor/32x32/apps/*
 %{_desktopdir}/%{name}.desktop
