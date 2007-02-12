@@ -1,5 +1,5 @@
 Summary:	An application which allows changing network-settings quickly
-Summary(pl):	Aplikacja pozwalaj±ca szybko zmieniæ ustawienia sieciowe
+Summary(pl.UTF-8):   Aplikacja pozwalajÄ…ca szybko zmieniÄ‡ ustawienia sieciowe
 Name:		netgo
 Version:	0.5
 Release:	0.1
@@ -25,13 +25,13 @@ that contain the network settings such as the IP, netmask, gateway,
 nameservers, etc... After creating a profile the user can execute its
 network settings with a single click!
 
-%description -l pl
-netGo jest aplikacj± pozwalaj±c± na zmianê pewnych parametrów
-sieciowych w prosty i szybki sposób. Przede wszystkim jest dedykowana
-dla u¿ytkowników komputerów przeno¶nych, którzy czêsto zmieniaj±
-ustawienia sieciowe. NetGo pozwala na tworzenie profili zawieraj±cych
+%description -l pl.UTF-8
+netGo jest aplikacjÄ… pozwalajÄ…cÄ… na zmianÄ™ pewnych parametrÃ³w
+sieciowych w prosty i szybki sposÃ³b. Przede wszystkim jest dedykowana
+dla uÅ¼ytkownikÃ³w komputerÃ³w przenoÅ›nych, ktÃ³rzy czÄ™sto zmieniajÄ…
+ustawienia sieciowe. NetGo pozwala na tworzenie profili zawierajÄ…cych
 takie dane jak IP, maska podsieci etc.. Po stworzeniu profili
-u¿ytkownicy mog± prze³±czaæ siê miêdzy nimi pojedynczym klikniêciem.
+uÅ¼ytkownicy mogÄ… przeÅ‚Ä…czaÄ‡ siÄ™ miÄ™dzy nimi pojedynczym klikniÄ™ciem.
 
 %prep
 %setup -q
