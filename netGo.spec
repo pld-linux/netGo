@@ -1,5 +1,5 @@
 Summary:	An application which allows changing network-settings quickly
-Summary(pl.UTF-8):   Aplikacja pozwalająca szybko zmienić ustawienia sieciowe
+Summary(pl.UTF-8):	Aplikacja pozwalająca szybko zmienić ustawienia sieciowe
 Name:		netgo
 Version:	0.5
 Release:	0.1
