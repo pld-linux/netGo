@@ -10,7 +10,7 @@ Source0:	http://netgo.hjolug.org/files/v0.5/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://netgo.hjolug.org
 BuildRequires:	kdebase-devel
-BuildRequires:	qt-devel >= 3.2
+BuildRequires:	qt-devel >= 6:3.2
 BuildRequires:	sed >= 4.0
 Requires:	net-tools
 Requires:	wireless-tools
