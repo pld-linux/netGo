@@ -2,10 +2,9 @@
 Name=netGo
 Comment=changing network-settings
 Comment[pl]=zmiana ustawień sieciowych
-Icon=netgo.png
+Icon=netgo
 Exec=netgo
 Terminal=false
 Type=Application
 Categories=Qt;KDE;Network;
-Encoding=UTF-8
 # vi: encoding=utf-8
